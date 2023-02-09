@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Created by Zachary Post 11/4/2021 -->
+<!-- All images used were found under the Creative Common's License -->
+<head>
+<title>Music Survey</title>
+<meta charset="utf-8">
+<style>
+body {
+	background-color: #13006B;
+}
+
+header {
+	font-family: Arial, sans-serif;
+	background-image: url("Space.png");
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: center;
+}
+
+header h1 {
+	font-family: Broadway;
+	font-size: 65px;
+}
+
+header h2 {
+	font-size: 30px;
+	font-family: Broadway;
+}
+
+form {
+color: white;
+font-family: MV Boli;
+}
+
+fieldset {
+	font-weight: bold;
+}
+
+legend {
+	font-size: 110%;
+	font-weight: normal;
+}
+</style>
+</head>
+<body>
+  <header>
+	<h2>Space Ham's&copy;</h2>
+	<h1>Music Survey</h1>
+	<h5>This form asks you what your name and email is, then some questions concerning music. All of this is sent to the email <b>zpost@mail.mccneb.edu</b></h5>
+  </header>
+  <main>
+	<form method="post" action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp">
+	<input type="hidden" name="title" value="Thank you for taking the time to complete the form. Below is the information that you submitted.">
+	<input name="bgcolor" type="hidden" value="#13006B">
+	<input name="return_link_url" type="hidden" value="http://student.mccinfo.net/~zpost/">
+	<input type="hidden" name="text_color" value="white">
+	<input name="font_size" type="hidden" value="30px">
+	<!-- Basic personal info -->
+		<p>First Name:<br>
+			<input type="text" name="firstname"></p>
+		<p>Last Name:<br>
+			<input type="text" name="lastname"></p>
+		<p>E-mail:<br>
+			<input type="email" name="email"></p>
+		
+	<!-- Favorite Music -->
+		<fieldset>
+			<legend>Select Your Favorite Types of Music:</legend>
+			<input type="checkbox" name="favorite music" value="pop">Pop<br>
+			<input type="checkbox" name="favorite music" value="Classical">Classical<br>
+			<input type="checkbox" name="favorite music" value="rock">Rock<br>
+			<input type="checkbox" name="favorite music" value="folk">Folk<br>
+			<input type="checkbox" name="favorite music" value="rap">Rap<br>
+			<input type="checkbox" name="favorite music" value="other">Other<br>
+		</fieldset>
+		<br>
+	<!-- CD purchasing -->	
+		<fieldset>
+			<legend>Select how often you purchase Music CDs:</legend>
+			<input type="radio" name="purchase cds" value="weekly">Weekly<br>
+			<input type="radio" name="purchase cds" value="monthly">Monthly<br>
+			<input type="radio" name="purchase cds" value="few a year">A few CDs each year<br>
+			<input type="radio" name="purchase cds" value="never purchase">Never Purchase<br>
+		</fieldset>
+		<br>
+			
+	<!-- Select the most often method for purchasing music -->
+		Select the method you use most often to purchase Music:<br>
+		<select name="method for purchase">
+			<option disabled selected value style="display:none"></option>
+			<option value="online">Online</option>
+			<option value="retail store">Retail Store</option>
+			<option value="other">Other</option>
+		</select>
+		<br>
+		
+	<!-- Asking for "What role does music play in your life?" -->
+		What role does music play in your life?<br>
+		<textarea name="comments" cols="60" rows="5">	
+		</textarea>
+		<br>
+		
+	<!-- Submit -->
+		<input type="submit" value="Submit">
+		<input type="reset" value="Clear Form">	
+			
+			
+	</form>
+  </main>
+  <footer></footer>
+</body>
+</html>

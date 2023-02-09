@@ -1,0 +1,46 @@
+body {
+	background-color: #666666;
+	background-image: linear-gradient(to top, #ffffff, #666666);
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+#container {
+	width: 960px;
+	margin: auto;
+	background-color: white;
+	box-shadow: 5px 5px 5px #1e1e1e;
+	border-radius: 15px;
+    padding: 20px;
+}
+
+header {
+	background-image: url("background.jpg");
+	height: 150px;
+	margin: auto;
+	border-radius: 15px;
+	border-style: solid;
+	border-color: black;
+	background-repeat: no-repeat;
+	
+}
+
+h1 {
+	font-family: Impact, sans-serif;
+	font-size: 4em;
+	padding-left: 145px;
+	color: gray
+}
+
+h2.photo {
+	float: right;
+}
+
+footer {
+	border-top-style: solid;
+	border-color: black;
+	font-size: .8em;
+	font-style: italic;
+	text-align: right;
+}
